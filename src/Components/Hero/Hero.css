@@ -1,0 +1,192 @@
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #f0cff3 0%,
+        #e1ffea22 60%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 5%;
+    overflow: hidden;
+}
+
+/* Left Section */
+
+.hero-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 80px;
+    line-height: 1.1;
+    gap: 20px;
+}
+
+.hero-left h2 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #090909;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 60px;
+    font-weight: 700;
+    color: #171717;
+    margin: 0;
+}
+
+/* New Hand Icon */
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-hand-icon img {
+    width: 65px;
+}
+
+/* Button */
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 310px;
+    height: 55px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero-latest-btn span {
+    color: white;
+    font-size: 28px;
+}
+
+/* Right Section */
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 1280px) {
+
+    .hero {
+        min-height: 80vh;
+        padding: 30px 4%;
+    }
+
+    .hero-left {
+        padding-left: 20px;
+    }
+
+    .hero-left h2 {
+        font-size: 22px;
+    }
+
+    .hero-text p {
+        font-size: 45px;
+    }
+
+    .hero-hand-icon img {
+        width: 50px;
+    }
+
+    .hero-right img {
+        max-width: 450px;
+    }
+
+    .hero-latest-btn {
+        width: 260px;
+        height: 48px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 750px) {
+
+    .hero {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        flex-direction: column;
+        padding: 40px 15px 20px;
+        overflow: hidden;
+    }
+
+    .hero-left {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-right img {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: auto;
+        object-fit: contain;
+    }
+}
+
+/* Small Mobile */
+
+@media (max-width: 380px) {
+
+    .hero {
+        padding: 35px 15px 15px;
+    }
+
+    .hero-left h2 {
+        font-size: 16px;
+    }
+
+    .hero-text p {
+        font-size: 30px;
+    }
+
+    .hero-hand-icon img {
+        width: 32px;
+    }
+
+    .hero-latest-btn {
+        width: 210px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .hero-right img {
+        max-width: 290px;
+    }
+}
